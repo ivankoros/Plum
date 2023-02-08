@@ -6,7 +6,7 @@ pacman::p_load(tidyverse, openxlsx)
 
 # The findGene function takes in a gene name as a string
 # and X number of filtered expression data sets from the DESeq2 -> filter pipeline I created
-# It returns the given gene's location and it's expression between data sets given
+# It returns the given gene's location and it's expression in the given data sets
 
 findGene <- function(name, datasets) {
   for (x in datasets) {
